@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pallabi Pati — Staff Nurse</title>
-    <meta name="description" content="Personal website of Pallabi Pati — Staff Nurse" />
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
 
-    <!-- Theme Script -->
-    <script>
-      (function(){try{var t=localStorage.getItem('theme')||'dark';if(['dark','amber','blue','light'].includes(t)){var h=document.documentElement;['dark','amber','blue'].forEach(function(c){h.classList.remove(c)});if(t!=='light'){h.classList.add(t)}}}catch(e){}})()
-    </script>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pallabi Pati — Staff Nurse</title>
+  <meta name="description" content="Personal website of Pallabi Pati — Staff Nurse" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pallabipati.vercel.app/" />
+  <meta property="og:title" content="Pallabi Pati — Staff Nurse" />
+  <meta property="og:description" content="Personal website of Pallabi Pati — Staff Nurse" />
+  <meta property="og:image" content="/meta/home.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://pallabipati.vercel.app/" />
+  <meta name="twitter:title" content="Pallabi Pati — Staff Nurse" />
+  <meta name="twitter:description" content="Personal website of Pallabi Pati — Staff Nurse" />
+  <meta name="twitter:image" content="/meta/home.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+
+  <!-- Theme Script -->
+  <script>
+    (function () { try { var t = localStorage.getItem('theme') || 'dark'; if (['dark', 'amber', 'blue', 'light'].includes(t)) { var h = document.documentElement;['dark', 'amber', 'blue'].forEach(function (c) { h.classList.remove(c) }); if (t !== 'light') { h.classList.add(t) } } } catch (e) { } })()
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
