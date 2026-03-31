@@ -5,6 +5,8 @@ import {
   EditorialPage,
   EditorialSection,
 } from "@/components/editorial-layout";
+import { Facebook } from "@/components/icons/Facebook";
+import { Instagram } from "@/components/icons/Instagram";
 import { PolaroidStrip } from "@/features/home/components/polaroid-strip";
 
 export const Route = createFileRoute("/")({ component: HomePage });
@@ -112,12 +114,7 @@ function HomePage() {
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-black/50"
             >
-              <img
-                src="/images/apps/snapzy/brand-logo.png"
-                alt=""
-                aria-hidden="true"
-                className="size-4 rounded-[4px] object-cover"
-              />
+              <Instagram className="size-4" />
               <span>Instagram ↗</span>
             </a>{" "}
             ·{" "}
@@ -125,9 +122,10 @@ function HomePage() {
               href="https://github.com/duongductrong"
               target="_blank"
               rel="noreferrer"
-              className="transition-colors duration-200 hover:text-black/50"
+              className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-black/50"
             >
-              Facebook ↗
+              <Facebook className="size-4" />
+              <span>Facebook ↗</span>
             </a>
           </p>
           <div>
