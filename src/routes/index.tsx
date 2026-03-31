@@ -25,14 +25,14 @@ function HomePage() {
             <img
               src="/PallabiLogo.png"
               alt="Pallabi Pati Logo"
-              className="size-32 mb-0.5 -ml-7 object-contain"
+              className="size-32 mb-0.5 -ml-7 object-contain dark:invert"
             />
             <h1 className="mb-1 text-[15px] leading-[1.2] font-semibold tracking-[-0.015em]">
               Pallabi Pati
             </h1>
             <p className="mb-5">
               I&apos;m a Staff Nurse at{" "}
-              <span className="font-semibold text-black/85">
+              <span className="font-semibold text-black/85 dark:text-white/85">
                 Neotia Bhagirathi Hospital
               </span>
               .
@@ -58,32 +58,32 @@ function HomePage() {
                 href="mailto:pallabipati2023@gmail.com"
                 target="_blank"
                 rel="noreferrer"
-                className="underline transition-colors duration-200 hover:text-black/50"
+                className="underline transition-colors duration-200 hover:text-black/50 dark:hover:text-white/50"
               >
                 Get in touch
               </a>
               .
             </p>
             <div id="experience" className="mt-8 mb-5">
-              <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45">
+              <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45 dark:text-white/45">
                 Experience
               </h2>
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between gap-2">
                     <div>
-                      <h3 className="text-[15px] font-medium text-black/85 leading-snug">
+                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
                         Staff Nurse
                       </h3>
-                      <p className="text-[14px] text-black/60 leading-snug">
+                      <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
                         Neotia Bhagirathi
                       </p>
                     </div>
                     <div className="text-right whitespace-nowrap">
-                      <span className="block text-[13px] text-black/40 tabular-nums leading-snug">
+                      <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
                         Oct 2023 — Present
                       </span>
-                      <span className="block text-[12px] text-black/30 leading-snug">
+                      <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
                         Kolkata
                       </span>
                     </div>
@@ -92,18 +92,18 @@ function HomePage() {
                 <div>
                   <div className="flex justify-between gap-2">
                     <div>
-                      <h3 className="text-[15px] font-medium text-black/85 leading-snug">
+                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
                         Junior Staff Nurse
                       </h3>
-                      <p className="text-[14px] text-black/60 leading-snug">
+                      <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
                         Malla Reddy Hospital
                       </p>
                     </div>
                     <div className="text-right whitespace-nowrap">
-                      <span className="block text-[13px] text-black/40 tabular-nums leading-snug">
+                      <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
                         Jun 2022 — Dec 2022
                       </span>
-                      <span className="block text-[12px] text-black/30 leading-snug">
+                      <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
                         Hyderabad
                       </span>
                     </div>
@@ -112,38 +112,38 @@ function HomePage() {
               </div>
             </div>
             <div id="education" className="mt-8 mb-5">
-              <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45">
+              <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45 dark:text-white/45">
                 Education
               </h2>
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between gap-2">
                     <div>
-                      <h3 className="text-[15px] font-medium text-black/85 leading-snug">
-                        B.Sc. in Nursing
+                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                        G.N.M. in Nursing
                       </h3>
-                      <p className="text-[14px] text-black/60 leading-snug">
-                        Malla Reddy University
+                      <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
+                        Rajib Gandhi University
                       </p>
                     </div>
                     <div className="text-right whitespace-nowrap">
-                      <span className="block text-[13px] text-black/40 tabular-nums leading-snug">
-                        2018 — 2022
+                      <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
+                        2020 — 2022
                       </span>
-                      <span className="block text-[12px] text-black/30 leading-snug">
-                        Hyderabad
+                      <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
+                        Karnataka
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <p className="inline-block text-black/26">
+            <p className="inline-block text-black/26 dark:text-white/26">
               <a
                 href="https://snapzy.app/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-black/50"
+                className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-black/50 dark:hover:text-white/50"
               >
                 <Instagram className="size-4" />
                 <span>Instagram ↗</span>
@@ -153,20 +153,20 @@ function HomePage() {
                 href="https://github.com/duongductrong"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-black/50"
+                className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-black/50 dark:hover:text-white/50"
               >
                 <Facebook className="size-4" />
                 <span>Facebook ↗</span>
               </a>
             </p>
             <div>
-              <EditorialDivider className="my-4 bg-black/8" />
+              <EditorialDivider className="my-4 bg-black/8 dark:bg-white/8" />
             </div>
             <p>
               Get in touch :{" "}
               <a
                 href="mailto:pallabipati2023@gmail.com"
-                className="underline transition-colors duration-200 hover:text-black/70"
+                className="underline transition-colors duration-200 hover:text-black/70 dark:hover:text-white/70"
               >
                 pallabipati2023@gmail.com
               </a>{" "}
@@ -174,17 +174,20 @@ function HomePage() {
             <div>
               <PolaroidStrip shouldReduceMotion={shouldReduceMotion} />
             </div>
-            <p className="mt-12 text-[12px] text-black/40">
-              This interface is inspired by{" "}
+            <p className="mt-12 text-[12px] text-black/40 dark:text-white/40 text-center">
+              Devlop and Maintained by{" "}
               <a
-                href="https://www.aidenybai.com/"
+                href="https://codewithdhruba.in/"
                 target="_blank"
                 rel="noreferrer"
-                className="underline transition-colors duration-200 hover:text-black/60"
+                className="underline transition-colors duration-200 hover:text-black/60 dark:hover:text-white/60"
               >
-                Aiden Bai
+                Dhrubaraj Pati
               </a>
               .
+            </p>
+            <p className="mt-2 text-[11px] text-black/30 dark:text-white/30 text-center">
+              © {new Date().getFullYear()} Pallabi Pati. All rights reserved.
             </p>
           </div>
         </EditorialSection>

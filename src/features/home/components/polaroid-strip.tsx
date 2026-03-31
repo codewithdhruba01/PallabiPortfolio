@@ -151,7 +151,7 @@ export function PolaroidStrip({
                     currentIndex === index ? null : index,
                   )
                 }
-                className="block cursor-pointer rounded-[3px] bg-[#f5f5f3] p-[8px] pb-[12px] shadow-[0_10px_22px_rgba(10,10,10,0.16)] transition-[transform,box-shadow,filter] duration-300 ease-out select-none hover:shadow-[0_15px_28px_rgba(10,10,10,0.22)] focus-visible:ring-2 focus-visible:ring-black/30 focus-visible:outline-none"
+                className="block cursor-pointer rounded-[3px] bg-[#f5f5f3] dark:bg-zinc-900 p-[8px] pb-[12px] shadow-[0_10px_22px_rgba(10,10,10,0.16)] dark:shadow-[0_10px_22px_rgba(0,0,0,0.5)] transition-[transform,box-shadow,filter] duration-300 ease-out select-none hover:shadow-[0_15px_28px_rgba(10,10,10,0.22)] dark:hover:shadow-[0_15px_28px_rgba(0,0,0,0.6)] focus-visible:ring-2 focus-visible:ring-black/30 dark:focus-visible:ring-white/30 focus-visible:outline-none"
                 style={{ transformOrigin: "center bottom" }}
                 animate={{ y, rotate, scale }}
                 transition={
@@ -168,7 +168,7 @@ export function PolaroidStrip({
                   className="h-[100px] w-[88px] object-cover sm:h-[120px] sm:w-[115px]"
                 />
                 <p
-                  className="mt-2 min-h-[22px] w-[88px] text-center text-[11px] leading-[1.18] text-black/72 sm:w-[115px] sm:text-[12px]"
+                  className="mt-2 min-h-[22px] w-[88px] text-center text-[11px] leading-[1.18] text-black/72 dark:text-white/72 sm:w-[115px] sm:text-[12px]"
                   style={{
                     fontFamily:
                       '"Bradley Hand", "Segoe Print", "Snell Roundhand", "Comic Sans MS", cursive',

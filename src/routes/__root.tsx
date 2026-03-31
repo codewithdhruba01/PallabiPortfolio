@@ -98,13 +98,13 @@ export const Route = createRootRoute({
   ),
 });
 
-// const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t&&['dark','amber','blue'].includes(t)){document.documentElement.className=t}else{document.documentElement.className='dark'}}catch(e){document.documentElement.className='dark'}})()`;
+const themeScript = `(function(){try{var t=localStorage.getItem('theme')||'dark';if(['dark','amber','blue','light'].includes(t)){var h=document.documentElement;['dark','amber','blue'].forEach(function(c){h.classList.remove(c)});if(t!=='light'){h.classList.add(t)}}}catch(e){}})()`;
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* <script dangerouslySetInnerHTML={{ __html: themeScript }} /> */}
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <HeadContent />
       </head>
       <body>

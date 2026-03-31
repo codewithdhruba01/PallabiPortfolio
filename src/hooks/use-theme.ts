@@ -1,10 +1,10 @@
 import { useCallback, useSyncExternalStore } from "react";
 
-export type Theme = "dark" | "amber" | "blue";
+export type Theme = "dark" | "light" | "amber" | "blue";
 
 const STORAGE_KEY = "theme";
 const DEFAULT_THEME: Theme = "dark";
-const VALID_THEMES: Array<Theme> = ["dark", "amber", "blue"];
+const VALID_THEMES: Array<Theme> = ["dark", "light", "amber", "blue"];
 
 let listeners: Array<() => void> = [];
 
@@ -28,8 +28,12 @@ function subscribe(listener: () => void) {
 
 function applyTheme(theme: Theme) {
   const html = document.documentElement;
-  VALID_THEMES.forEach((t) => html.classList.remove(t));
-  html.classList.add(theme);
+  VALID_THEMES.forEach((t) => {
+    if (t !== "light") html.classList.remove(t);
+  });
+  if (theme !== "light") {
+    html.classList.add(theme);
+  }
 }
 
 export function useTheme() {
