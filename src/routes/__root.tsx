@@ -47,40 +47,44 @@ export const Route = createRootRoute({
         content:
           "Personal website of Pallabi Pati — Staff Nurse",
       },
+      {
+        name: "og:image",
+        content: "https://pallabipati.in/meta/home.png",
+      },
+      {
+        name: "twitter:image",
+        content: "https://pallabipati.in/meta/home.png",
+      },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-/* 
       {
         rel: "icon",
         type: "image/png",
-        sizes: "32x32",
-        href: "/favicon-32x32.png",
+        sizes: "96x96",
+        href: "/favicon/favicon-96x96.png",
       },
       {
         rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: "/favicon-16x16.png",
+        type: "image/svg+xml",
+        href: "/favicon/favicon.svg",
       },
       {
-        rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico",
+        rel: "shortcut icon",
+        href: "/favicon/favicon.ico",
       },
       {
         rel: "apple-touch-icon",
         sizes: "180x180",
-        href: "/apple-touch-icon.png",
+        href: "/favicon/apple-touch-icon.png",
       },
       {
         rel: "manifest",
-        href: "/manifest.json",
+        href: "/favicon/site.webmanifest",
       },
-*/
     ],
   }),
 

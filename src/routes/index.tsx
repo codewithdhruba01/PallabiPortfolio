@@ -11,7 +11,28 @@ import { PolaroidStrip } from "@/features/home/components/polaroid-strip";
 
 import { Navbar } from "@/components/navbar";
 
-export const Route = createFileRoute("/")({ component: HomePage });
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      {
+        title: "Pallabi Pati — Staff Nurse",
+      },
+      {
+        name: "description",
+        content: "Personal website of Pallabi Pati — Staff Nurse",
+      },
+      {
+        name: "og:image",
+        content: "https://pallabipati.in/meta/home.png",
+      },
+      {
+        name: "twitter:image",
+        content: "https://pallabipati.in/meta/home.png",
+      },
+    ],
+  }),
+  component: HomePage,
+});
 
 function HomePage() {
   const shouldReduceMotion = useReducedMotion();
@@ -87,7 +108,7 @@ function HomePage() {
               <div className="flex justify-between gap-2">
                 <div>
                   <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                    G.N.M. in Nursing
+                    Nursing
                   </h3>
                   <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
                     Rajib Gandhi University
@@ -110,7 +131,7 @@ function HomePage() {
             </div>
             <p className="inline-block text-black/26 dark:text-white/26">
               <a
-                href="https://snapzy.app/"
+                href="https://www.instagram.com/rimipati5"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-black/50 dark:hover:text-white/50"
@@ -120,7 +141,7 @@ function HomePage() {
               </a>{" "}
               ·{" "}
               <a
-                href="https://github.com/duongductrong"
+                href="https://www.facebook.com/profile.php?id=100080508494335"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:text-black/50 dark:hover:text-white/50"

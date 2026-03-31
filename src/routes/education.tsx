@@ -7,6 +7,25 @@ import {
 import { Navbar } from "@/components/navbar";
 
 export const Route = createFileRoute("/education")({
+  head: () => ({
+    meta: [
+      {
+        title: "Education — Pallabi Pati",
+      },
+      {
+        name: "description",
+        content: "Academic qualifications and nursing training details.",
+      },
+      {
+        name: "og:image",
+        content: "https://pallabipati.in/meta/Education.png",
+      },
+      {
+        name: "twitter:image",
+        content: "https://pallabipati.in/meta/Education.png",
+      },
+    ],
+  }),
   component: EducationPage,
 });
 
@@ -33,7 +52,7 @@ function EducationPage() {
                 <div className="flex justify-between gap-2 border-b border-black/5 dark:border-white/10 pb-4 mb-4">
                   <div>
                     <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                      G.N.M. (General Nursing and Midwifery)
+                      General Nursing and Midwifery
                     </h3>
                     <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
                       Rajib Gandhi University of Health Sciences

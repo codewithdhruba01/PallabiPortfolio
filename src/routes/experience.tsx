@@ -7,6 +7,25 @@ import {
 import { Navbar } from "@/components/navbar";
 
 export const Route = createFileRoute("/experience")({
+  head: () => ({
+    meta: [
+      {
+        title: "Experience — Pallabi Pati",
+      },
+      {
+        name: "description",
+        content: "Professional background and clinical experience as a Staff Nurse.",
+      },
+      {
+        name: "og:image",
+        content: "https://pallabipati.in/meta/Experience.png",
+      },
+      {
+        name: "twitter:image",
+        content: "https://pallabipati.in/meta/Experience.png",
+      },
+    ],
+  }),
   component: ExperiencePage,
 });
 

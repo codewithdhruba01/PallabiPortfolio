@@ -7,6 +7,25 @@ import {
 import { Navbar } from "@/components/navbar";
 
 export const Route = createFileRoute("/resume")({
+  head: () => ({
+    meta: [
+      {
+        title: "Resume — Pallabi Pati",
+      },
+      {
+        name: "description",
+        content: "View and download the professional clinical resume of Pallabi Pati.",
+      },
+      {
+        name: "og:image",
+        content: "https://pallabipati.in/meta/Resume.png",
+      },
+      {
+        name: "twitter:image",
+        content: "https://pallabipati.in/meta/Resume.png",
+      },
+    ],
+  }),
   component: ResumePage,
 });
 

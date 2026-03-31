@@ -9,6 +9,25 @@ import { Instagram } from "@/components/icons/Instagram";
 import { Facebook } from "@/components/icons/Facebook";
 
 export const Route = createFileRoute("/contact")({
+  head: () => ({
+    meta: [
+      {
+        title: "Contact — Pallabi Pati",
+      },
+      {
+        name: "description",
+        content: "Get in touch with Pallabi Pati for professional nursing opportunities and collaborations.",
+      },
+      {
+        name: "og:image",
+        content: "https://pallabipati.in/meta/Contact.png",
+      },
+      {
+        name: "twitter:image",
+        content: "https://pallabipati.in/meta/Contact.png",
+      },
+    ],
+  }),
   component: ContactPage,
 });
 
