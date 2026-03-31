@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useReducedMotion } from "motion/react";
 import {
   EditorialDivider,
@@ -51,18 +51,6 @@ function HomePage() {
               ensuring smooth coordination and support for patients and their families.
               I continuously strive to enhance my knowledge through evidence-based practice,
               aiming to provide efficient, reliable, and empathetic care.
-            </p>
-            <p className="mb-5">
-              Open to work as a Staff Nurse{" "}
-              <a
-                href="mailto:pallabipati2023@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-                className="underline transition-colors duration-200 hover:text-black/50 dark:hover:text-white/50"
-              >
-                Get in touch
-              </a>
-              .
             </p>
             <div id="experience" className="mt-8 mb-5">
               <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45 dark:text-white/45">
@@ -144,14 +132,13 @@ function HomePage() {
             <div>
               <EditorialDivider className="my-4 bg-black/8 dark:bg-white/8" />
             </div>
-            <p>
-              Get in touch :{" "}
-              <a
-                href="mailto:pallabipati2023@gmail.com"
+            <p>Open to work as a Staff Nurse{" "}
+              <Link
+                to="/contact"
                 className="underline transition-colors duration-200 hover:text-black/70 dark:hover:text-white/70"
               >
-                pallabipati2023@gmail.com
-              </a>{" "}
+                Get in touch
+              </Link>
             </p>
             <div>
               <PolaroidStrip shouldReduceMotion={shouldReduceMotion} />
