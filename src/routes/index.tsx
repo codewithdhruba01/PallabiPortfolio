@@ -83,40 +83,41 @@ function HomePage() {
                   </span>
                 </div>
               </div>
-              <p className="mt-4">
+              <div className="mt-6">
                 <a
                   href="/experience"
-                  className="text-[14px] font-medium underline transition-colors duration-200 hover:text-black/50 dark:hover:text-white/50"
+                  className="inline-flex items-center justify-center py-2 px-4 text-[13px] font-medium text-black/70 dark:text-white/70 bg-black/2 dark:bg-white/2 border border-black/5 dark:border-white/10 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-200"
                 >
-                  View full experience ↗
+                  Show all work experiences
                 </a>
-              </p>
+              </div>
             </div>
             <div id="education" className="mt-8 mb-5">
               <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45 dark:text-white/45">
                 Education
               </h2>
-              <div className="space-y-4">
+              <div className="flex justify-between gap-2">
                 <div>
-                  <div className="flex justify-between gap-2">
-                    <div>
-                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                        G.N.M. in Nursing
-                      </h3>
-                      <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
-                        Rajib Gandhi University
-                      </p>
-                    </div>
-                    <div className="text-right whitespace-nowrap">
-                      <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
-                        2020 — 2022
-                      </span>
-                      <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
-                        Karnataka
-                      </span>
-                    </div>
-                  </div>
+                  <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                    G.N.M. in Nursing
+                  </h3>
+                  <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
+                    Rajib Gandhi University
+                  </p>
                 </div>
+                <div className="text-right">
+                  <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
+                    2020 — 2022
+                  </span>
+                </div>
+              </div>
+              <div className="mt-6">
+                <a
+                  href="/education"
+                  className="inline-flex items-center justify-center py-2 px-4 text-[13px] font-medium text-black/70 dark:text-white/70 bg-black/2 dark:bg-white/2 border border-black/5 dark:border-white/10 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-200"
+                >
+                  Show all education history
+                </a>
               </div>
             </div>
             <p className="inline-block text-black/26 dark:text-white/26">
