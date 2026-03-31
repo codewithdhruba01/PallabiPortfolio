@@ -9,10 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ResumeRouteImport } from './routes/resume'
 import { Route as ExperienceRouteImport } from './routes/experience'
 import { Route as EducationRouteImport } from './routes/education'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ResumeRoute = ResumeRouteImport.update({
+  id: '/resume',
+  path: '/resume',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ExperienceRoute = ExperienceRouteImport.update({
   id: '/experience',
   path: '/experience',
@@ -33,34 +39,45 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/education': typeof EducationRoute
   '/experience': typeof ExperienceRoute
+  '/resume': typeof ResumeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/education': typeof EducationRoute
   '/experience': typeof ExperienceRoute
+  '/resume': typeof ResumeRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/education': typeof EducationRoute
   '/experience': typeof ExperienceRoute
+  '/resume': typeof ResumeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/education' | '/experience'
+  fullPaths: '/' | '/education' | '/experience' | '/resume'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/education' | '/experience'
-  id: '__root__' | '/' | '/education' | '/experience'
+  to: '/' | '/education' | '/experience' | '/resume'
+  id: '__root__' | '/' | '/education' | '/experience' | '/resume'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   EducationRoute: typeof EducationRoute
   ExperienceRoute: typeof ExperienceRoute
+  ResumeRoute: typeof ResumeRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/resume': {
+      id: '/resume'
+      path: '/resume'
+      fullPath: '/resume'
+      preLoaderRoute: typeof ResumeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/experience': {
       id: '/experience'
       path: '/experience'
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   EducationRoute: EducationRoute,
   ExperienceRoute: ExperienceRoute,
+  ResumeRoute: ResumeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
