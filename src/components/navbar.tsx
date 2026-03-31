@@ -21,7 +21,7 @@ export function Navbar() {
           <span className="absolute -bottom-1 left-0 w-0 h-px bg-black dark:bg-white transition-all duration-300 group-hover:w-full" />
         </a>
         <a
-          href="#experience"
+          href="/experience"
           className={cn(
             "relative group text-[13px] font-medium tracking-tight text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-200"
           )}

@@ -66,50 +66,31 @@ function HomePage() {
             </p>
             <div id="experience" className="mt-8 mb-5">
               <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45 dark:text-white/45">
-                Experience
+                Current Role
               </h2>
-              <div className="space-y-4">
+              <div className="flex justify-between gap-2">
                 <div>
-                  <div className="flex justify-between gap-2">
-                    <div>
-                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                        Staff Nurse
-                      </h3>
-                      <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
-                        Neotia Bhagirathi
-                      </p>
-                    </div>
-                    <div className="text-right whitespace-nowrap">
-                      <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
-                        Oct 2023 — Present
-                      </span>
-                      <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
-                        Kolkata
-                      </span>
-                    </div>
-                  </div>
+                  <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                    Staff Nurse
+                  </h3>
+                  <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
+                    Neotia Bhagirathi Hospital
+                  </p>
                 </div>
-                <div>
-                  <div className="flex justify-between gap-2">
-                    <div>
-                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                        Junior Staff Nurse
-                      </h3>
-                      <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
-                        Malla Reddy Hospital
-                      </p>
-                    </div>
-                    <div className="text-right whitespace-nowrap">
-                      <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
-                        Jun 2022 — Dec 2022
-                      </span>
-                      <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
-                        Hyderabad
-                      </span>
-                    </div>
-                  </div>
+                <div className="text-right">
+                  <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
+                    Oct 2023 — Present
+                  </span>
                 </div>
               </div>
+              <p className="mt-4">
+                <a
+                  href="/experience"
+                  className="text-[14px] font-medium underline transition-colors duration-200 hover:text-black/50 dark:hover:text-white/50"
+                >
+                  View full experience ↗
+                </a>
+              </p>
             </div>
             <div id="education" className="mt-8 mb-5">
               <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45 dark:text-white/45">
