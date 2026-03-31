@@ -5,7 +5,6 @@ import {
   EditorialPage,
   EditorialSection,
 } from "@/components/editorial-layout";
-import { LuckyCloverMark } from "@/features/home/components/lucky-clover-mark";
 import { PolaroidStrip } from "@/features/home/components/polaroid-strip";
 
 export const Route = createFileRoute("/")({ component: HomePage });
@@ -17,13 +16,21 @@ function HomePage() {
     <EditorialPage>
       <EditorialSection width="compact">
         <div>
-          <div className="mb-2 w-fit">
-            <LuckyCloverMark />
-          </div>
-          <h1 className="mb-4 text-[15px] leading-[1.2] font-semibold tracking-[-0.015em]">
+            <img 
+              src="/PallabiLogo.png" 
+              alt="Pallabi Pati Logo" 
+              className="size-32 mb-0.5 -ml-7 object-contain" 
+            />
+          <h1 className="mb-1 text-[15px] leading-[1.2] font-semibold tracking-[-0.015em]">
             Pallabi Pati
           </h1>
-          <p className="mb-5">I&apos;m a Staff Nurse.</p>
+          <p className="mb-5">
+            I&apos;m a Staff Nurse at{" "}
+            <span className="font-semibold text-black/85">
+              Neotia Bhagirathi Hospital
+            </span>
+            .
+          </p>
           <p className="mb-5">
             I am a compassionate and highly skilled Staff Nurse with over 3 years
             of professional experience in diverse healthcare environments.
