@@ -54,7 +54,7 @@ Create an optimized production build:
 npm run build
 ```
 
-## 📂 Project Structure
+##  Project Structure
 
 - `src/routes/`: File-based routing powered by TanStack Router (`index.tsx` is the main portfolio page).
 - `src/components/`: Reusable UI components and layout systems (Editorial layouts).
