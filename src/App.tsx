@@ -95,10 +95,10 @@ export default function App() {
     <>
       <Navbar currentView={view} setView={setView} />
       {view === "home" && <Home setView={setView} shouldReduceMotion={shouldReduceMotion ?? false} />}
-      {view === "experience" && <Experience setView={setView} />}
-      {view === "education" && <Education setView={setView} />}
-      {view === "resume" && <Resume setView={setView} />}
-      {view === "contact" && <Contact setView={setView} />}
+      {view === "experience" && <Experience />}
+      {view === "education" && <Education />}
+      {view === "resume" && <Resume />}
+      {view === "contact" && <Contact />}
     </>
   );
 }

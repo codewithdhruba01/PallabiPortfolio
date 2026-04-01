@@ -4,22 +4,13 @@ import {
   EditorialSection,
 } from "@/components/editorial-layout";
 
-interface EducationProps {
-  setView: (view: any) => void;
-}
+interface EducationProps {}
 
-export function Education({ setView }: EducationProps) {
+export function Education({}: EducationProps) {
   return (
     <EditorialPage>
       <EditorialSection width="compact">
         <div className="pt-8">
-          <button
-            onClick={() => setView("home")}
-            className="mb-8 inline-block text-[13px] text-black/45 dark:text-white/45 hover:text-black dark:hover:text-white transition-colors duration-200"
-          >
-            ← Back to Home
-          </button>
-
           <h1 className="mb-8 text-[15px] font-semibold tracking-[-0.015em]">
             Education & Qualifications
           </h1>

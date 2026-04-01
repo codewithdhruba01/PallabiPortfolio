@@ -4,11 +4,9 @@ import {
   EditorialSection,
 } from "@/components/editorial-layout";
 
-interface ResumeProps {
-  setView: (view: any) => void;
-}
+interface ResumeProps {}
 
-export function Resume({ setView }: ResumeProps) {
+export function Resume({}: ResumeProps) {
   const resumeId = "1yn5s0Nzn1a8nKjZZ0O6eRDOCzSxaVEhZ";
   const previewUrl = `https://drive.google.com/file/d/${resumeId}/preview`;
   const downloadUrl = `https://drive.google.com/uc?export=download&id=${resumeId}`;
@@ -17,13 +15,6 @@ export function Resume({ setView }: ResumeProps) {
     <EditorialPage>
       <EditorialSection width="compact">
         <div className="pt-8">
-          <button
-            onClick={() => setView("home")}
-            className="mb-8 inline-block text-[13px] text-black/45 dark:text-white/45 hover:text-black dark:hover:text-white transition-colors duration-200"
-          >
-            ← Back to Home
-          </button>
-          
           <div className="text-center mb-8">
             <h1 className="text-[24px] font-semibold tracking-tight text-black/90 dark:text-white/90 mb-1">
               Resume

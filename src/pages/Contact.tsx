@@ -6,24 +6,15 @@ import {
 import { Instagram } from "@/components/icons/Instagram";
 import { Facebook } from "@/components/icons/Facebook";
 
-interface ContactProps {
-  setView: (view: any) => void;
-}
+interface ContactProps {}
 
-export function Contact({ setView }: ContactProps) {
+export function Contact({}: ContactProps) {
   const email = "pallabipati2023@gmail.com";
 
   return (
     <EditorialPage>
       <EditorialSection width="compact">
         <div className="pt-8">
-          <button 
-            onClick={() => setView("home")}
-            className="mb-8 inline-block text-[13px] text-black/45 dark:text-white/45 hover:text-black dark:hover:text-white transition-colors duration-200"
-          >
-            ← Back to Home
-          </button>
-          
           <div className="text-center mb-8">
             <h1 className="text-[24px] font-semibold tracking-tight text-black/90 dark:text-white/90 mb-1">
               Get in Touch
