@@ -4,13 +4,13 @@ import {
   EditorialSection,
 } from "@/components/editorial-layout";
 
-interface ExperienceProps {}
+interface ExperienceProps { }
 
-export function Experience({}: ExperienceProps) {
+export function Experience({ }: ExperienceProps) {
   return (
     <EditorialPage>
       <EditorialSection width="compact">
-        <div className="pt-8">
+        <div className="pt-8 relative isolate">
           <h1 className="mb-8 text-[15px] font-semibold tracking-[-0.015em]">
             Professional Experience
           </h1>
@@ -90,6 +90,18 @@ export function Experience({}: ExperienceProps) {
 
           <EditorialDivider className="my-12 bg-black/8 dark:bg-white/8" />
 
+          {/* Background Image positioned relative to the footer area */}
+          <div
+            className="absolute -bottom-32 left-0 right-0 h-80 -z-10 opacity-[0.2] dark:opacity-[0.16] pointer-events-none"
+            style={{
+              backgroundImage: "url('/images/bgimage/flower1.png')",
+              backgroundSize: '100% auto',
+              backgroundPosition: 'center bottom',
+              backgroundRepeat: 'no-repeat',
+              maskImage: 'linear-gradient(to top, black 25%, transparent)',
+              WebkitMaskImage: 'linear-gradient(to top, black 25%, transparent)',
+            }}
+          />
         </div>
       </EditorialSection>
     </EditorialPage>

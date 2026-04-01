@@ -4,13 +4,13 @@ import {
   EditorialSection,
 } from "@/components/editorial-layout";
 
-interface EducationProps {}
+interface EducationProps { }
 
-export function Education({}: EducationProps) {
+export function Education({ }: EducationProps) {
   return (
     <EditorialPage>
       <EditorialSection width="compact">
-        <div className="pt-8">
+        <div className="pt-8 relative isolate">
           <h1 className="mb-8 text-[15px] font-semibold tracking-[-0.015em]">
             Education & Qualifications
           </h1>
@@ -64,6 +64,18 @@ export function Education({}: EducationProps) {
 
           <EditorialDivider className="my-12 bg-black/8 dark:bg-white/8" />
 
+          {/* Background Image positioned relative to the footer area */}
+          <div
+            className="absolute -bottom-72 left-0 right-0 h-80 -z-10 opacity-[0.2] dark:opacity-[0.16] pointer-events-none"
+            style={{
+              backgroundImage: "url('/images/bgimage/flower2.png')",
+              backgroundSize: '100% auto',
+              backgroundPosition: 'center bottom',
+              backgroundRepeat: 'no-repeat',
+              maskImage: 'linear-gradient(to top, black 25%, transparent)',
+              WebkitMaskImage: 'linear-gradient(to top, black 25%, transparent)',
+            }}
+          />
         </div>
       </EditorialSection>
     </EditorialPage>
