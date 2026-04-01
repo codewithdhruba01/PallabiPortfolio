@@ -51,19 +51,29 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
             <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45 dark:text-white/45">
               Current Role
             </h2>
-            <div className="flex justify-between gap-2">
-              <div>
-                <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                  Staff Nurse
-                </h3>
-                <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
-                  Neotia Bhagirathi Hospital
-                </p>
-              </div>
-              <div className="text-right">
-                <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
-                  Oct 2023 — Present
-                </span>
+            <div className="flex items-start gap-4">
+              <img
+                src="/images/company/neotia_logo.jpeg"
+                alt="Neotia Bhagirathi Hospital Logo"
+                className="size-10 rounded-lg object-contain bg-white p-1 shrink-0 shadow-sm"
+              />
+              <div className="flex justify-between items-start gap-2 flex-1 min-w-0">
+                <div>
+                  <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                    Staff Nurse
+                  </h3>
+                  <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
+                    Neotia Bhagirathi Hospital
+                  </p>
+                </div>
+                <div className="text-right whitespace-nowrap">
+                  <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
+                    Oct 2023 — Present
+                  </span>
+                  <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
+                    Kolkata
+                  </span>
+                </div>
               </div>
             </div>
             <div className="mt-6">
@@ -79,19 +89,29 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
             <h2 className="mb-4 text-[13px] font-semibold tracking-[0.05em] uppercase text-black/45 dark:text-white/45">
               Education
             </h2>
-            <div className="flex justify-between gap-2">
-              <div>
-                <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                  Nursing
-                </h3>
-                <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
-                  Rajib Gandhi University
-                </p>
-              </div>
-              <div className="text-right">
-                <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
-                  2020 — 2022
-                </span>
+            <div className="flex items-start gap-4">
+              <img
+                src="/images/company/collage_logo.png"
+                alt="Rajib Gandhi University Logo"
+                className="size-10 rounded-lg object-contain bg-white p-1 shrink-0 shadow-sm"
+              />
+              <div className="flex justify-between items-start gap-2 flex-1 min-w-0">
+                <div>
+                  <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                    General Nursing and Midwifery
+                  </h3>
+                  <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
+                    Vanshika College Of Nursing
+                  </p>
+                </div>
+                <div className="text-right whitespace-nowrap">
+                  <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
+                    2020 — 2022
+                  </span>
+                  <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
+                    Karnataka
+                  </span>
+                </div>
               </div>
             </div>
             <div className="mt-6">

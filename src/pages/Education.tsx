@@ -29,7 +29,7 @@ export function Education({ }: EducationProps) {
                       General Nursing and Midwifery
                     </h3>
                     <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
-                      Rajib Gandhi University of Health Sciences
+                      Vanshika College Of Nursing
                     </p>
                   </div>
                   <div className="text-right whitespace-nowrap">

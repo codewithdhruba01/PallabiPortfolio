@@ -104,7 +104,7 @@ export function Experience({ }: ExperienceProps) {
                 </div>
               </div>
               <p className="text-[14px] leading-relaxed text-black/70 dark:text-white/70">
-                Focused on foundational nursing duties, patient monitoring, and supporting senior staff in a busy hospital environment. Gained valuable hands-on experience in clinical assessments and patient support.
+                Hands-on experience at a leading cardiac care center, assisting in specialized patient monitoring and cardiovascular procedures under expert clinical supervision.
               </p>
             </div>
           </div>
