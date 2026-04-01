@@ -1,6 +1,6 @@
 import { useTheme } from "@/hooks/use-theme";
 import { Sun } from "@/components/icons/Sun";
-import { Moon } from "@/components/icons/Moon"; 
+import { Moon } from "@/components/icons/Moon";
 import { cn } from "@/lib/utils";
 
 interface NavbarProps {
@@ -16,7 +16,6 @@ export function Navbar({ currentView, setView }: NavbarProps) {
     { id: "resume", label: "Resume" },
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
-    { id: "contact", label: "Contact" },
   ];
 
   return (
@@ -28,8 +27,8 @@ export function Navbar({ currentView, setView }: NavbarProps) {
             onClick={() => setView(item.id)}
             className={cn(
               "relative group text-[12px] sm:text-[13px] font-medium tracking-tight transition-colors duration-200 whitespace-nowrap",
-              currentView === item.id 
-                ? "text-black dark:text-white" 
+              currentView === item.id
+                ? "text-black dark:text-white"
                 : "text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white"
             )}
           >
@@ -40,9 +39,9 @@ export function Navbar({ currentView, setView }: NavbarProps) {
             )} />
           </button>
         ))}
-        
+
         <div className="w-px h-4 bg-black/10 dark:bg-white/10 shrink-0" aria-hidden="true" />
-        
+
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="p-1 rounded-full text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-all duration-200 hover:scale-110 active:scale-95 shrink-0"

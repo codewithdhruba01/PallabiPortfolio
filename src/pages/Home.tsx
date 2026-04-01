@@ -71,7 +71,7 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
                 onClick={() => setView("experience")}
                 className="inline-flex items-center justify-center py-2 px-4 text-[13px] font-medium text-black/70 dark:text-white/70 bg-black/2 dark:bg-white/2 border border-black/5 dark:border-white/10 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-200"
               >
-                Show all work experiences
+                Show all experiences
               </button>
             </div>
           </div>
@@ -99,7 +99,7 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
                 onClick={() => setView("education")}
                 className="inline-flex items-center justify-center py-2 px-4 text-[13px] font-medium text-black/70 dark:text-white/70 bg-black/2 dark:bg-white/2 border border-black/5 dark:border-white/10 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-200"
               >
-                Show all education history
+                Show all education
               </button>
             </div>
           </div>
