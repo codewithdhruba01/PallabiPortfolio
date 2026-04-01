@@ -80,9 +80,9 @@ export function Education({ }: EducationProps) {
 
           {/* Background Image positioned relative to the footer area */}
           <div
-            className="absolute -bottom-72 left-0 right-0 h-80 -z-10 opacity-[0.2] dark:opacity-[0.16] pointer-events-none"
+            className="absolute -bottom-40 sm:-bottom-72 left-0 right-0 h-80 -z-10 opacity-[0.2] dark:opacity-[0.16] pointer-events-none"
             style={{
-              backgroundImage: "url('/images/bgimage/flower2.png')",
+              backgroundImage: "url('/images/bgimage/flower1.png')",
               backgroundSize: '100% auto',
               backgroundPosition: 'center bottom',
               backgroundRepeat: 'no-repeat',
