@@ -135,9 +135,9 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
               Get in touch
             </button>
           </p>
-            <PolaroidStrip shouldReduceMotion={shouldReduceMotion} />
-          </div>
-        </EditorialSection>
-      </EditorialPage>
+          <PolaroidStrip shouldReduceMotion={shouldReduceMotion} />
+        </div>
+      </EditorialSection>
+    </EditorialPage>
   );
 }

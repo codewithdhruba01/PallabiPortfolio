@@ -17,22 +17,29 @@ export function Education({ }: EducationProps) {
 
           <div className="space-y-12">
             <div>
-              <div className="flex justify-between gap-2 border-b border-black/5 dark:border-white/10 pb-4 mb-4">
-                <div>
-                  <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                    General Nursing and Midwifery
-                  </h3>
-                  <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
-                    Rajib Gandhi University of Health Sciences
-                  </p>
-                </div>
-                <div className="text-right whitespace-nowrap">
-                  <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
-                    2020 — 2022
-                  </span>
-                  <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
-                    Karnataka
-                  </span>
+              <div className="flex items-start gap-4 border-b border-black/5 dark:border-white/10 pb-4 mb-4">
+                <img
+                  src="/images/company/collage_logo.png"
+                  alt="Rajib Gandhi University Logo"
+                  className="size-10 rounded-lg object-contain bg-white p-1 shrink-0 shadow-sm"
+                />
+                <div className="flex justify-between items-start gap-2 flex-1 min-w-0">
+                  <div>
+                    <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                      General Nursing and Midwifery
+                    </h3>
+                    <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
+                      Rajib Gandhi University of Health Sciences
+                    </p>
+                  </div>
+                  <div className="text-right whitespace-nowrap">
+                    <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
+                      2020 — 2022
+                    </span>
+                    <span className="block text-[12px] text-black/30 dark:text-white/30 leading-snug">
+                      Karnataka
+                    </span>
+                  </div>
                 </div>
               </div>
               <p className="text-[14px] leading-relaxed text-black/70 dark:text-white/70">
@@ -41,19 +48,26 @@ export function Education({ }: EducationProps) {
             </div>
 
             <div>
-              <div className="flex justify-between gap-2 border-b border-black/5 dark:border-white/10 pb-4 mb-4">
-                <div>
-                  <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                    Higher Secondary Education
-                  </h3>
-                  <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
-                    (WBCHSE) Science Stream
-                  </p>
-                </div>
-                <div className="text-right whitespace-nowrap">
-                  <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
-                    2018 — 2020
-                  </span>
+              <div className="flex items-start gap-4 border-b border-black/5 dark:border-white/10 pb-4 mb-4">
+                <img
+                  src="/images/company/HS_logo.png"
+                  alt="WBCHSE Logo"
+                  className="size-10 rounded-lg object-contain bg-white p-1 shrink-0 shadow-sm"
+                />
+                <div className="flex justify-between items-start gap-2 flex-1 min-w-0">
+                  <div>
+                    <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                      Higher Secondary Education
+                    </h3>
+                    <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
+                      (WBCHSE) Science Stream
+                    </p>
+                  </div>
+                  <div className="text-right whitespace-nowrap">
+                    <span className="block text-[13px] text-black/40 dark:text-white/40 tabular-nums leading-snug">
+                      2018 — 2020
+                    </span>
+                  </div>
                 </div>
               </div>
               <p className="text-[14px] leading-relaxed text-black/70 dark:text-white/70">
