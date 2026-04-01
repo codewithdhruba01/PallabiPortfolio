@@ -64,9 +64,6 @@ export function Education({}: EducationProps) {
 
           <EditorialDivider className="my-12 bg-black/8 dark:bg-white/8" />
 
-          <p className="text-center text-[12px] text-black/40 dark:text-white/40">
-            © {new Date().getFullYear()} Pallabi Pati. All rights reserved.
-          </p>
         </div>
       </EditorialSection>
     </EditorialPage>

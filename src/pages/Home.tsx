@@ -135,26 +135,9 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
               Get in touch
             </button>
           </p>
-          <div>
             <PolaroidStrip shouldReduceMotion={shouldReduceMotion} />
           </div>
-          <p className="mt-12 text-[12px] text-black/40 dark:text-white/40 text-center">
-            Devlop and Maintained by{" "}
-            <a
-              href="https://codewithdhruba.in/"
-              target="_blank"
-              rel="noreferrer"
-              className="underline transition-colors duration-200 hover:text-black/60 dark:hover:text-white/60"
-            >
-              Dhrubaraj Pati
-            </a>
-            .
-          </p>
-          <p className="mt-2 text-[11px] text-black/30 dark:text-white/30 text-center">
-            © {new Date().getFullYear()} Pallabi Pati. All rights reserved.
-          </p>
-        </div>
-      </EditorialSection>
-    </EditorialPage>
+        </EditorialSection>
+      </EditorialPage>
   );
 }

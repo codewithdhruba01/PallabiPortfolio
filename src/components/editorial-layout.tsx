@@ -2,6 +2,7 @@ import { cva } from "class-variance-authority";
 import type { VariantProps } from "class-variance-authority";
 import type { ComponentPropsWithoutRef } from "react";
 import { cn } from "@/lib/utils";
+import { Footer } from "@/components/footer";
 
 const editorialSectionVariants = cva(
   "mx-auto w-full text-[15px] leading-[1.62] tracking-[-0.012em]",
@@ -26,14 +27,17 @@ export function EditorialPage({
   return (
     <div
       className={cn(
-        "bg-background text-foreground min-h-screen overflow-x-hidden",
+        "bg-background text-foreground min-h-screen flex flex-col overflow-x-hidden",
         className,
       )}
       {...props}
     >
-      <main className="mx-auto w-full max-w-[1366px] px-6 pt-16 pb-16 sm:px-8 sm:pt-16">
+      <main className="grow mx-auto w-full max-w-[1366px] px-6 pt-16 sm:px-8">
         {children}
       </main>
+      <EditorialSection width="compact" className="pb-16">
+        <Footer />
+      </EditorialSection>
     </div>
   );
 }

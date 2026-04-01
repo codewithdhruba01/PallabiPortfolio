@@ -102,9 +102,6 @@ export function Contact({}: ContactProps) {
             </div>
           </div>
 
-          <p className="text-center text-[11px] text-black/30 dark:text-white/30">
-            © {new Date().getFullYear()} Pallabi Pati. All rights reserved.
-          </p>
         </div>
       </EditorialSection>
     </EditorialPage>
