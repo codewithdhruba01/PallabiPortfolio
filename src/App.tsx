@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useReducedMotion } from "motion/react";
+import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { Navbar } from "@/components/navbar";
 import { Home } from "@/pages/Home";
 import { Experience } from "@/pages/Experience";
@@ -94,11 +94,24 @@ export default function App() {
   return (
     <>
       <Navbar currentView={view} setView={setView} />
-      {view === "home" && <Home setView={setView} shouldReduceMotion={shouldReduceMotion ?? false} />}
-      {view === "experience" && <Experience />}
-      {view === "education" && <Education />}
-      {view === "resume" && <Resume />}
-      {view === "contact" && <Contact />}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={view}
+          initial={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: 8 }}
+          animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
+          exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -8 }}
+          transition={{
+            duration: 0.32,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+        >
+          {view === "home" && <Home setView={setView} shouldReduceMotion={shouldReduceMotion ?? false} />}
+          {view === "experience" && <Experience />}
+          {view === "education" && <Education />}
+          {view === "resume" && <Resume />}
+          {view === "contact" && <Contact />}
+        </motion.div>
+      </AnimatePresence>
     </>
   );
 }
