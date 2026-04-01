@@ -27,7 +27,7 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
           </h1>
           <p className="mb-5">
             I&apos;m a Staff Nurse at{" "}
-            <span className="font-semibold text-black/85 dark:text-white/85">
+            <span className="font-semibold text-black/85 dark:text-white/55">
               Neotia Bhagirathi Hospital
             </span>
             .

@@ -15,7 +15,7 @@ export function Resume({}: ResumeProps) {
     <EditorialPage>
       <EditorialSection width="compact">
         <div className="pt-8">
-          <div className="text-center mb-8">
+          <div className="text-left mb-8">
             <h1 className="text-[24px] font-semibold tracking-tight text-black/90 dark:text-white/90 mb-1">
               Resume
             </h1>
@@ -24,8 +24,8 @@ export function Resume({}: ResumeProps) {
             </p>
           </div>
 
-          <div className="flex justify-center mb-8">
-            <EditorialDivider className="w-24 bg-black/10 dark:bg-white/10" />
+          <div className="flex justify-start mb-8">
+            <EditorialDivider className="w-16 bg-black/10 dark:bg-white/10" />
           </div>
 
           <div className="relative w-full aspect-[1/1.4] rounded-xl overflow-hidden border border-black/5 dark:border-white/10 shadow-sm bg-black/5 dark:bg-white/5 mb-8">
