@@ -34,7 +34,7 @@ export function Navbar({ currentView, setView }: NavbarProps) {
           >
             {item.label}
             <span className={cn(
-              "absolute -bottom-1 left-0 h-px bg-black dark:bg-white transition-all duration-300 group-hover:w-full",
+              "absolute bottom-0 left-0 h-px bg-black dark:bg-white transition-all duration-300 group-hover:w-full",
               currentView === item.id ? "w-full" : "w-0"
             )} />
           </button>
