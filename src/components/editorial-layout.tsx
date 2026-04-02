@@ -35,7 +35,7 @@ export function EditorialPage({
       <main className="grow mx-auto w-full max-w-[1366px] px-6 pt-16 sm:px-8">
         {children}
       </main>
-      <EditorialSection width="compact" className="pb-16">
+      <EditorialSection width="compact" className="pb-4">
         <Footer />
       </EditorialSection>
     </div>
