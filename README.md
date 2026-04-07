@@ -65,7 +65,3 @@ npm run build
 
 - **Email**: [pallabipati2023@gmail.com](mailto:pallabipati2023@gmail.com)
 - **Location**: Kolkata, India
-
----
-
-*Inspired by [Aiden Bai](https://www.aidenybai.com/). Built with care for Pallabi Pati.
