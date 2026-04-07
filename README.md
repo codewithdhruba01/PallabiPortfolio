@@ -68,5 +68,4 @@ npm run build
 
 ---
 
-*Inspired by [Aiden Bai](https://www.aidenybai.com/). Built with care for Pallabi Pati.*
-# PallabiPortfolio
+*Inspired by [Aiden Bai](https://www.aidenybai.com/). Built with care for Pallabi Pati.
