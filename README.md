@@ -64,4 +64,3 @@ npm run build
 ## Contact
 
 - **Email**: [pallabipati2023@gmail.com](mailto:pallabipati2023@gmail.com)
-- **Location**: Kolkata, India
