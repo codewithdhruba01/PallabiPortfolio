@@ -26,7 +26,7 @@ export function Footer() {
               href="https://codewithdhruba.in/"
               target="_blank"
               rel="noreferrer"
-              className="underline hover:text-black/70 dark:hover:text-white/70 transition-colors"
+              className="underline underline-offset-4 hover:text-black/70 dark:hover:text-white/70 transition-colors"
             >
               Dhrubaraj Pati
             </a>
