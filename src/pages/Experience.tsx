@@ -50,10 +50,13 @@ export function Experience({ }: ExperienceProps) {
                         href="https://neotiahospital.com/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
-                        title="Visit Website"
+                        className="group relative text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
                       >
                         <GlobeIcon className="size-3.5" />
+                        <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 text-white dark:bg-white/90 dark:text-black text-[11px] font-medium rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all whitespace-nowrap pointer-events-none shadow-sm flex flex-col items-center z-50">
+                          Visit Website
+                          <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-black/90 dark:border-t-white/90" />
+                        </span>
                       </a>
                     </div>
                     <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
@@ -92,10 +95,13 @@ export function Experience({ }: ExperienceProps) {
                         href="https://www.mallareddynarayana.com/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
-                        title="Visit Website"
+                        className="group relative text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
                       >
                         <GlobeIcon className="size-3.5" />
+                        <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 text-white dark:bg-white/90 dark:text-black text-[11px] font-medium rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all whitespace-nowrap pointer-events-none shadow-sm flex flex-col items-center z-50">
+                          Visit Website
+                          <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-black/90 dark:border-t-white/90" />
+                        </span>
                       </a>
                     </div>
                     <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
@@ -133,10 +139,13 @@ export function Experience({ }: ExperienceProps) {
                         href="https://www.narayanahealth.org/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
-                        title="Visit Website"
+                        className="group relative text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
                       >
                         <GlobeIcon className="size-3.5" />
+                        <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 text-white dark:bg-white/90 dark:text-black text-[11px] font-medium rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all whitespace-nowrap pointer-events-none shadow-sm flex flex-col items-center z-50">
+                          Visit Website
+                          <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-black/90 dark:border-t-white/90" />
+                        </span>
                       </a>
                     </div>
                     <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
