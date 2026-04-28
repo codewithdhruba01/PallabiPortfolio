@@ -170,7 +170,7 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
           <p>Open to work as a Staff Nurse{" "}
             <button
               onClick={() => setView("contact")}
-              className="underline transition-colors duration-200 hover:text-black/70 dark:hover:text-white/70"
+              className="underline underline-offset-4 transition-colors duration-200 hover:text-black/70 dark:hover:text-white/70"
             >
               Get in touch
             </button>
