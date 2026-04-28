@@ -4,6 +4,23 @@ import {
   EditorialSection,
 } from "@/components/editorial-layout";
 
+const GlobeIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    <path d="M2 12h20" />
+  </svg>
+);
+
 interface ExperienceProps { }
 
 export function Experience({ }: ExperienceProps) {
@@ -25,9 +42,20 @@ export function Experience({ }: ExperienceProps) {
                 />
                 <div className="flex justify-between items-start gap-2 flex-1 min-w-0">
                   <div>
-                    <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                      Staff Nurse
-                    </h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                        Staff Nurse
+                      </h3>
+                      <a 
+                        href="https://neotiahospital.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
+                        title="Visit Website"
+                      >
+                        <GlobeIcon className="size-3.5" />
+                      </a>
+                    </div>
                     <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
                       Neotia Bhagirathi Hospital
                     </p>
@@ -56,9 +84,20 @@ export function Experience({ }: ExperienceProps) {
                 />
                 <div className="flex justify-between items-start gap-2 flex-1 min-w-0">
                   <div>
-                    <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                      Junior Staff Nurse (Full Time)
-                    </h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                        Junior Staff Nurse (Full Time)
+                      </h3>
+                      <a 
+                        href="https://www.mallareddynarayana.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
+                        title="Visit Website"
+                      >
+                        <GlobeIcon className="size-3.5" />
+                      </a>
+                    </div>
                     <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
                       Malla Reddy Hospital
                     </p>
@@ -86,9 +125,20 @@ export function Experience({ }: ExperienceProps) {
                 />
                 <div className="flex justify-between items-start gap-2 flex-1 min-w-0">
                   <div>
-                    <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                      Staff Nurse (Intern)
-                    </h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                        Staff Nurse (Intern)
+                      </h3>
+                      <a 
+                        href="https://www.narayanahealth.org/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
+                        title="Visit Website"
+                      >
+                        <GlobeIcon className="size-3.5" />
+                      </a>
+                    </div>
                     <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
                       Narayana Multispeciality Hospital
                     </p>
