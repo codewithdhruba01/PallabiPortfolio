@@ -27,9 +27,14 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
           </h1>
           <p className="mb-5">
             I&apos;m a Staff Nurse at{" "}
-            <span className="font-semibold text-black/85 dark:text-white/55">
+            <a 
+              href="https://neotiahospital.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-black/85 dark:text-white/55 hover:underline decoration-black/30 dark:decoration-white/30 underline-offset-4 transition-all"
+            >
               Neotia Bhagirathi Hospital
-            </span>
+            </a>
             .
           </p>
           <p className="mb-5">
