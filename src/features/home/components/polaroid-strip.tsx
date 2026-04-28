@@ -81,15 +81,15 @@ export function PolaroidStrip({
         visible: {
           opacity: 1,
           transition: {
-            duration: 0.28,
+            duration: 0.4,
             ease: [0.22, 1, 0.36, 1],
-            delayChildren: 0.06,
-            staggerChildren: 0.045,
+            delayChildren: 0.1,
+            staggerChildren: 0.12,
           },
         },
         exit: {
           opacity: 0,
-          transition: { duration: 0.18, ease: [0.33, 1, 0.68, 1] },
+          transition: { duration: 0.2, ease: [0.33, 1, 0.68, 1] },
         },
       };
   const cardEntryVariants: Variants = shouldReduceMotion
@@ -99,15 +99,21 @@ export function PolaroidStrip({
         exit: { opacity: 0, transition: { duration: 0 } },
       }
     : {
-        hidden: { opacity: 0, scale: 0.985 },
+        hidden: { 
+          opacity: 0, 
+          scale: 0.85,
+          filter: "blur(16px) contrast(120%) brightness(110%)"
+        },
         visible: {
           opacity: 1,
           scale: 1,
-          transition: { duration: 0.25, ease: [0.22, 1, 0.36, 1] },
+          filter: "blur(0px) contrast(100%) brightness(100%)",
+          transition: { duration: 1.2, ease: [0.22, 1, 0.36, 1] },
         },
         exit: {
           opacity: 0,
           scale: 0.995,
+          filter: "blur(4px) contrast(100%) brightness(100%)",
           transition: { duration: 0.18, ease: [0.33, 1, 0.68, 1] },
         },
       };
