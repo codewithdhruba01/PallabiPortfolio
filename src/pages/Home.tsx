@@ -6,6 +6,7 @@ import {
 import { Facebook } from "@/components/icons/Facebook";
 import { Instagram } from "@/components/icons/Instagram";
 import { PolaroidStrip } from "@/features/home/components/polaroid-strip";
+import { Globe } from "lucide-react";
 
 interface HomeProps {
   setView: (view: any) => void;
@@ -64,9 +65,23 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
               />
               <div className="flex justify-between items-start gap-2 flex-1 min-w-0">
                 <div>
-                  <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
-                    Staff Nurse
-                  </h3>
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-[15px] font-medium text-black/85 dark:text-white/85 leading-snug">
+                      Staff Nurse
+                    </h3>
+                    <a 
+                      href="https://neotiahospital.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group relative text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 transition-colors"
+                    >
+                      <Globe className="size-3.5" />
+                      <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/90 text-white dark:bg-white/90 dark:text-black text-[11px] font-medium rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all whitespace-nowrap pointer-events-none shadow-sm flex flex-col items-center z-50">
+                        Visit Website
+                        <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-black/90 dark:border-t-white/90" />
+                      </span>
+                    </a>
+                  </div>
                   <p className="text-[14px] text-black/60 dark:text-white/60 leading-snug">
                     Neotia Bhagirathi Hospital
                   </p>
