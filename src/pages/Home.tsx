@@ -20,7 +20,7 @@ export function Home({ setView, shouldReduceMotion }: HomeProps) {
           <img
             src="/PallabiLogo.png"
             alt="Pallabi Pati Logo"
-            className="size-32 mb-0.5 -ml-7 object-contain dark:invert"
+            className="size-32 mb-0.5 -ml-7 object-contain dark:invert animate-logo-load"
           />
           <h1 className="mb-1 text-[15px] leading-[1.2] font-semibold tracking-[-0.015em]">
             Pallabi Pati
